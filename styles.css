@@ -1,0 +1,140 @@
+@import url("https://fonts.google.com/specimen/Poppins");
+@import url("https://fonts.google.com/specimen/Open+Sans");
+
+html {
+  box-sizing: border-box;
+  height: 100%;
+  margin: 0;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+body {
+    min-height: 100%;
+    margin: 0px;   
+    color: #ffffff;
+    line-height: 1.7;
+    background-color: #674baf;
+}
+
+.container {
+  padding: 50px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.row-content {
+  display: flex;
+  justify-content: center;
+}
+
+.row-icons {
+  display: flex;
+  justify-content: center;
+}
+
+[class*='col-'] {
+    padding: 10px;
+  }
+
+.img {
+    max-width: 100%;
+}
+
+@media only screen and (min-width: 320px)  {
+    body {
+        background: url(./images/bg-mobile.svg) no-repeat;
+        background-size: 100%;
+        background-color: #674baf;
+    }
+    .col-text {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+    }
+    
+    @media only screen and (min-width:1440px) {
+    body {
+        background: url(./images/bg-desktop.svg) no-repeat;
+        background-size: 100%;
+        background-color: #674baf;
+    }
+    [class*='col-'] {
+        padding: 50px 50px 50px 0px;
+      }
+
+      .container {
+          align-items:stretch;
+          height: 100vh;
+      }
+      .row-icons {
+        justify-content: flex-end;
+      }
+      .col-text {
+          align-items: flex-start;
+          text-align: left;
+      }
+    }
+
+h1 {
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  margin: 0px 0px 20px 0px;
+}
+
+p {
+  margin: 20px 0px;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 400;
+  letter-spacing: 1px;
+  min-width: 350px;
+  max-width: 500px;
+}
+
+.btn {
+  border: none;
+  outline: none;
+  cursor: pointer;
+  margin-top: 20px;
+  background-color: white;
+  color: #674baf;
+  height: 50px;
+  width: 200px;
+  border-radius: 25px;
+  font-weight: 500;
+  font-size: 16px;
+  box-shadow: inset 0px 0px 0px rgba(255, 255, 255, 1),
+    0px 4px 8px rgba(0, 0, 0, 0.4);
+}
+
+.btn:hover {
+  background-color: #e882e8;
+  color: #ffffff;
+}
+
+.btn:active {
+  box-shadow: inset 0px 4px 8px rgba(0, 0, 0, 0.4);
+}
+
+ion-icon {
+  font-size: 24px;
+  padding: 5px;
+}
+ion-icon:hover {
+  cursor: pointer;
+  color: #e882e8;
+}
